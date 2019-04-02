@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Let's Win</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+<h2>Play Game </h2>
+<div class="play">
+    <form action="/play" method="GET">
+        Name:<input type="text" name="name"><br>
+        <input type="submit" value="Play">
+    </form>
+</div>
+
+<h2>Check Record</h2>
+<div class="check">
+    <form action="/check" method="GET">
+        Name:<input type="text" name="name"><br>
+        <input type="submit" value="check">
+    </form>
+</div>
+
+<h2>Check All</h2>
+<div class="all">
+    <form action="/all" method="GET">
+        <input type="submit" value="check all">
+    </form>
+</div>
+</body>
+
+</html>
